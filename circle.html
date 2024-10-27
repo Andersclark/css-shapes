@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>CSS Shapes: Circle</title>
+</head>
+<body>
+ 
+  <header><h1>Circle</h1></header>
+  <main>
+    <style>
+      .circle {
+        width: 120px;
+        aspect-ratio: 1/1;
+        background-color: hotpink;
+      }
+    </style>
+    <section>
+      <h2>Clip Path Circle()</h2>
+      <style>
+        .clip-path-circle {
+          clip-path: circle();
+          object-position: center;
+        }
+      </style>
+      <div class="circle clip-path-circle"></div>
+    </section>
+    <section>
+      <h2>Border Radius Circle</h2>
+      <style>
+        .border-radius-circle {
+          border-radius: 50%;
+        }
+      </style>
+      <div class="circle border-radius-circle"></div>
+    </section>
+    <section>
+      <h2>Radial Gradient Circle</h2>
+      <style>
+        .radial-gradient-circle {
+          background: radial-gradient(circle, hotpink 70%, transparent 0);
+        }
+      </style>
+      <div class="circle radial-gradient-circle"></div>
+    </section>
+    <section>
+      <h2>Path() Circle</h2>
+      <style>
+        .path-circle {
+          clip-path: path("M 50, 0 A 50, 50 0 1, 0 50, 100 A 50, 50 0 1, 0 50, 0 Z");
+        }
+      </style>
+      <div class="circle path-circle"></div>
+    </section>
+    
+  </main>
+  <footer>Made with curiosity by Anders Clark</footer>
+</body>
+</html>
